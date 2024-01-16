@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang='ar'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>برنامج عربة للمحاسبة</title>
+    <link rel='shortcut icon' href='assets/images/favicon.png' type='image/x-icon'><link type="text/css" rel="stylesheet" href="/public/assets/plugins/bootstrap/css/bootstrap.min.css" /><link type="text/css" rel="stylesheet" href="/public/assets/css/style.css" /><link type="text/css" rel="stylesheet" href="/public/assets/css/style-main.css" /><link type="text/css" rel="stylesheet" href="/public/assets/font/icon.css" /><link type="text/css" rel="stylesheet" href="/public/assets/font/@fontsource/tajawal/index.css" /><link type="text/css" rel="stylesheet" href="/public/assets/select2/css/select2.min.css" /><link type="text/css" rel="stylesheet" href="/public/assets/select2-bootstrap4-theme/select2-bootstrap4.min.css" /><link type="text/css" rel="stylesheet" href="/public/assets/datetimepicker/css/jquery.datetimepicker.min.css" /><script src="/public/js/vendor/modernizr-2.8.3.min.js"></script><style>
+    .alert-dismissible .btn-close
+    {
+        position: absolute;
+        top: 0;
+        left: 0 !important;
+        z-index: 2;
+        padding: 1.25rem 1rem;
+    }
+
+    .selected
+    {
+        background: #4c70f0;
+        color: white;
+    }
+
+    .selected:hover
+    {
+        color: #4c70f0;
+        background: white;
+    }
+
+    .select2-container
+    {
+        width: 100% !important;
+    }
+    .select2-container--bootstrap4 .select2-selection--multiple .select2-selection__choice
+    {
+        float: right !important;
+    }
+</style>
+</head>
+<body class="app sidebar-mini rtl light-mode">
+    <!-- GLOBAL-LOADER -->
+    <div id="global-loader">
+        <img src="/public/assets/images/logo.svg" class="loader-img" alt="Loader">
+    </div>
+    <!-- /GLOBAL-LOADER -->
+    <div class="page">
+        <div class="page-main"><!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/public/uploads/images1/logo-tran-bg.png"/>
+    <link rel="stylesheet" href="/public/css/style_1.css"/>
+
+    <title>ARABAH_ERP عربة</title>
+  </head>
+  <body style="direction: ltr !important;">
+    <div id="app">
+      <header class="bg-erp bg-top bg-[length:auto_130%] bg-no-repeat min-h-[400px] w-full pb-3 pt-10 bg-white bg-opacity-95 bg-blend-overlay grid place-content-center place-items-center gap-y-5 border-b">
+
+        <img src="/public/uploads/images1/logo-tran-bg.png" alt="logo1" class="w-[250px] h-auto"/>
+        <div class="pt-10">
+          <p class="text-5xl font-bold text-center font-amiri pb-5">مرحباً بك في</p>
+
+          <h2 class="text-4xl font-bold text-center font-rubik py-5">
+            نظام إدارة المحلات التجارية والمنشآت الصغيرة والمتوسطة والكبيرة
+          </h2>
+          <h3 class="text-xl font-bold text-center text-gray-500 pb-5 font-rubik">
+            .يمكنك الإعتماد على كفاءة النظام في تحليل البيانات والعمليات
+            المحاسبية والإدارية المتعددة المستويات
+          </h3>
+        </div>
+      </header>
+      <div>
+        <div class="pb-0 flex flex-wrap gap-0 justify-center items-start content-start alg:items-center text-center min-h-screen">
+          <img src="/public/uploads/images1/logbg.png" id="side-left-image" class="flex-1 flex bg-logbg bg-cover bg-no-repeat bg-center overflow-hidden min-w-full h-[380px] alg:min-w-[330px] alg:h-[80vh]"></img>
+
+          <div class="flex-1 flex flex-col justify-start alg:justify-center content-center items-center min-w-[330px] pmd:min-h-screen bg-[length:100%_50vh]">
+            <p class="text-center text-[#4A74F8] text-3xl py-10 0bg-gray-800 font-lemonada">مرحبا بك مجددا</p>
+
+            <form class="flex flex-col gap-3 0bg-gray-800 pt-8" autocomplete="off" method="post" enctype="application/x-www-form-urlencoded">
+              
+              <div>
+                <input required type="text" name="ucname" maxlength="50" placeholder="إسم المستخدم" dir="rtl" class="text-center text-sm focus:text-lg focus:placeholder-transparent min-h-[50px] min-w-[300px] duration-500 border rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white outline-none"/>
+              </div>
+              <div>
+                <input required type="password" name="ucpwd" maxlength="50" class="text-center text-sm focus:text-lg focus:placeholder-transparent min-h-[50px] min-w-[300px] duration-500 border rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white outline-none" placeholder="كلمة المرور"/>
+              </div>
+              <div class="py-5">
+                <input class="relative inline-flex items-center justify-center p-2 mb-2 me-2 overflow-hidden text-xl font-medium text-white rounded-lg group bg-gradient-to-br from-blue-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800" type="submit" name="login" value="تسجيل الدخول">
+              </div>
+            </form>
+            <div class="0bg-gray-800 py-5 grid gap-3">
+              <p>هل نسيت كلمة المرور؟</p>
+              <a href="/auth/mail" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
+                إستعادة بالبريد الالكتروني              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="w-full py-10 border">
+      <div class="flex flex-wrap justify-center gap-x-5 gap-y-3 px-5">
+        <div class="flex-1 min-w-[300px] px-5">
+          <div class="text-center">
+            <a href="https://wa.me/message/ZT2RLVQI2EBCO1" target="_blank" rel="noopener noreferrer" class="text-xl font-almarai font-bold text-[#4A74F8] dark:text-green-500 hover:underline text-center underline-offset-[5px]">الدعم الفني</a>
+          </div>
+          <div class="text-center">
+            <span class="text-2xl font-bold">©</span>
+            <span class="text-xl">2024 </span>
+            <span class="text-xl"> ARABAH_ERP</span>
+            <p>.جميع الحقوق محفوظة مؤسسة ريادة الابتكار لتقنية المعلومات</p>
+            <img src="/public/uploads/images1/ebda3-logo.png" alt="logo2" class="h-[150px] w-auto m-auto"/>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html><script src="/public/assets/js/jquery.min.js"></script><script src="/public/assets/plugins/bootstrap/js/popper.min.js"></script><script src="/public/assets/plugins/bootstrap/js/bootstrap.min.js"></script><script src="/public/assets/plugins/charts-c3/d3.v5.min.js"></script><script src="/public/assets/plugins/charts-c3/c3-chart.js"></script><script src="/public/assets/plugins/input-mask/jquery.mask.min.js"></script><script src="/public/assets/js/tooltip&popover.js"></script><script src="/public/assets/plugins/sidemenu/sidemenu.js"></script><script src="/public/assets/plugins/bootstrap5-typehead/autocomplete.js"></script><script src="/public/assets/js/typehead.js"></script><script src="/public/assets/js/charts.js"></script><script src="/public/assets/js/app-chart.js"></script><script src="/public/assets/plugins/select2/select2.full.min.js"></script><script src="/public/assets/plugins/datatable/js/jquery.dataTables.min.js"></script><script src="/public/assets/plugins/datatable/js/dataTables.bootstrap5.js"></script><script src="/public/assets/plugins/datatable/js/dataTables.buttons.min.js"></script><script src="/public/assets/plugins/datatable/js/buttons.bootstrap5.min.js"></script><script src="/public/assets/plugins/datatable/js/jszip.min.js"></script><script src="/public/assets/plugins/datatable/pdfmake/pdfmake.min.js"></script><script src="/public/assets/plugins/datatable/pdfmake/vfs_fonts.js"></script><script src="/public/assets/plugins/datatable/js/buttons.html5.min.js"></script><script src="/public/assets/plugins/datatable/js/buttons.print.min.js"></script><script src="/public/assets/plugins/datatable/js/buttons.colVis.min.js"></script><script src="/public/assets/plugins/datatable/dataTables.responsive.min.js"></script><script src="/public/assets/plugins/datatable/responsive.bootstrap5.min.js"></script><script src="/public/assets/js/table-data.js"></script><script src="/public/assets/js/autofill-table.js"></script><script src="/public/assets/plugins/sidebar/sidebar.js"></script><script src="/public/assets/plugins/p-scroll/perfect-scrollbar.js"></script><script src="/public/assets/plugins/p-scroll/pscroll.js"></script><script src="/public/assets/plugins/p-scroll/pscroll-1.js"></script><script src="/public/assets/plugins/wysiwyag/jquery.richtext.js"></script><script src="/public/assets/plugins/wysiwyag/wysiwyag.js"></script><script src="/public/assets/js/themeColors.js"></script><script src="/public/assets/js/sticky.js"></script><script src="/public/js/select2.min.js"></script><script src="/public/assets/js/select2.js"></script><script src="/public/assets/js/custom.js"></script><script src="/public/js/jquery-ui-ar.js"></script><script src="/public/js/jquery-ui-timepicker-addon-ar.js"></script><script src="/public/js/helper.js"></script><a href='#top' id='back-to-top'><i class='fa fa-angle-up'></i></a>
+<div class="whatsapp-fixed" data-bs-placement='right' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' title='' data-bs-original-title='الدعم الفني'>
+    <a href="https://wa.me/message/ZT2RLVQI2EBCO1" target="_blank" title="whatsapp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+</div>
+<script>
+    $(document).ready(function()
+    {
+        $('#global-loader').remove();
+        $('.select2').select2({ theme: 'bootstrap4'});
+        $('.select21').select2({ theme: 'bootstrap4'});
+    });
+
+    function checkAll()
+    {
+        $('input:checkbox').click();  
+    }
+
+    function checkByKey(MyDiv)
+    {
+        $("#" + MyDiv + " :input:checkbox").click();
+    }
+
+    $("#DateFrom").datepicker
+    ({
+        dateFormat: "yy-mm-dd",
+        changeMonth: true,
+        changeYear: true,
+        onSelect: function (selected) 
+        {
+            var dt = new Date(selected);
+            dt.setDate(dt.getDate() + 1);
+            $("#DateTo").datepicker("option", "minDate", dt);
+            DifferenceTwoDate("#DateFrom","#DateTo");
+        }
+    });
+    
+    $("#DateTo").datepicker
+    ({
+        dateFormat: "yy-mm-dd",
+        changeMonth: true,
+        changeYear: true,
+        onSelect: function (selected) 
+        {
+            var dt = new Date(selected);
+            dt.setDate(dt.getDate() - 1);
+            $("#DateFrom").datepicker("option", "maxDate", dt);
+            DifferenceTwoDate("#DateFrom","#DateTo");
+        }
+    });
+
+    function DifferenceTwoDate($IdDateFrom, $IdDateTo)
+    {
+        var d1 = $($IdDateFrom).datepicker('getDate');
+        var d2 = $($IdDateTo).datepicker('getDate');
+
+        var diff = 0;
+
+        if (d1 && d2) 
+        {
+            diff = Math.floor((d2.getTime() - d1.getTime()) / 86400000); // ms per day
+        }
+        $("#VacationDays").val(diff);
+    }
+
+    var base_url = window.location.origin;
+
+    function setMarketerPourcentage(row)
+    {
+        var SubscriptionsPrice = $('#SubscriptionsPrice_' + row).val();
+        var MarketerPrice = $('#MarketerPrice_' + row).val();
+
+        var MarketerPourcentage = ((parseFloat(MarketerPrice) * 100 ) / parseFloat(SubscriptionsPrice));
+        $('#MarketerPourcentage_' + row).val(MarketerPourcentage.toFixed(2));
+    }
+
+    function AddNewSubscriptions()
+    {
+        var last = $('#div_row_subscriptions div.my_row').last().attr("id");
+
+        if(last == undefined)
+        {
+            var row = 1;
+        }
+        else
+        {
+            var row = parseInt(last) + 1;
+        }
+
+        $.ajax
+        ({
+            url: base_url + "/companies/subscriptions",
+            method:"POST",  
+            data:{SubscriptionId: row},
+            success: function(data)
+            {
+                var data = JSON.parse(data);
+                $("#div_row_subscriptions").append(data);
+
+                $(".Date").datepicker(
+                {
+                    dateFormat: "yy-mm-dd",
+                    changeMonth: true, 
+                    changeYear: true, 
+                });
+            }
+        })
+    }
+
+    function getPurchaseProduct(row)
+    {
+        $("#searchText").remove();
+        var ProductId = $('#ProductId').val();
+
+        var last = $('#PurchaseTable tbody tr:last').html();
+
+        if(last == undefined)
+        {
+            var row = 1;
+        }
+        else
+        {
+            var id = $('#PurchaseTable tbody tr:last').attr('id');
+            var row = parseInt(id) + 1;
+        }
+        
+        $.ajax
+        ({
+            url: base_url + "/purchases/addproductitem",
+            method:"POST",  
+            data:{PurchaseItemNumber: row, ProductId: ProductId},
+            success: function(data)
+            {
+                var data = JSON.parse(data);
+                $("#PurchaseTable tbody").append(data);
+                $('.select2').select2({dir: "rtl"});
+            }
+        })
+    }
+
+    function getDebitNote()
+    {
+        var SaleId = $('#SaleId').val();
+
+        var SaleTotalAfterTax = $("#SaleId option:selected").attr("SaleTotalAfterTax");
+        $('#ReceiptPrice').val(SaleTotalAfterTax);
+        
+        $.ajax
+        ({
+            url: base_url + "/debitnotes/getdebit",
+            method:"POST",  
+            data:{SaleId: SaleId},
+            success: function(data)
+            {
+                var data = JSON.parse(data);
+                $("#DebitNoteId").html(data);
+            }
+        })
+    }
+
+    function getNotifications()
+    {
+        $.ajax
+        ({
+            url: base_url + "/index/notification",
+            method:"POST",  
+            data:{NotificationId: 1},
+            success: function(data)
+            {
+                var data = JSON.parse(data);
+                $("#NotificationsDetails").html(data);
+            }
+        })
+    }
+
+    function SetDebitNotePrice()
+    {
+        var DebitNoteTotalAfterTax = $("#DebitNoteId option:selected").attr("DebitNoteTotalAfterTax");
+        $('#ReceiptPrice').val(DebitNoteTotalAfterTax);
+    }
+
+    function SetDebitNotePriceSimplified()
+    {
+        var DebitNoteTotalAfterTax = $("#DebitNoteSimplifiedId option:selected").attr("DebitNoteTotalAfterTax");
+        $('#ReceiptSimplifiedPrice').val(DebitNoteTotalAfterTax);
+    }
+
+    function SetCreditNotePrice()
+    {
+        var CreditNoteTotalAfterTax = $("#CreditNoteId option:selected").attr("CreditNoteTotalAfterTax");
+        $('#SaleExpensePrice').val(CreditNoteTotalAfterTax);
+    }
+
+    function getDebitNoteSimplified()
+    {
+        var SaleSimplifiedId = $('#SaleSimplifiedId').val();
+
+        var SaleSimplifiedTotalAfterTax = $("#SaleSimplifiedId option:selected").attr("SaleSimplifiedTotalAfterTax");
+        $('#ReceiptSimplifiedPrice').val(SaleSimplifiedTotalAfterTax);
+
+        $.ajax
+        ({
+            url: base_url + "/debitnotessimplified/getdebit",
+            method:"POST",  
+            data:{SaleSimplifiedId: SaleSimplifiedId},
+            success: function(data)
+            {
+                var data = JSON.parse(data);
+                $("#DebitNoteSimplifiedId").html(data);
+            }
+        })
+    }
+
+    function getSaleProduct(row)
+    {
+        $("#searchText").remove();
+        var ProductId = $('#ProductId').val();
+        var StoreId = $('#StoreId').val();
+
+        var last = $('#PurchaseTable tbody tr:last').html();
+
+        if(last == undefined)
+        {
+            var row = 1;
+        }
+        else
+        {
+            var id = $('#PurchaseTable tbody tr:last').attr('id');
+            var row = parseInt(id) + 1;
+        }
+        
+        $.ajax
+        ({
+            url: base_url + "/salesdrafts/addproductitem",
+            method:"POST",  
+            data:{DraftItemNumber: row, ProductId: ProductId, StoreId: StoreId},
+            success: function(data)
+            {
+                var data = JSON.parse(data);
+                $("#PurchaseTable tbody").append(data);
+                $('.select2').select2({theme: 'bootstrap4'});
+            }
+        })
+    }
+
+    function getSaleProductDetails(row)
+    {
+        $("#searchText").remove();
+        var ProductId = $('#ProductId').val();
+        var StoreId = $('#StoreId').val();
+
+        var last = $('#PurchaseTable tbody tr:last').html();
+
+        if(last == undefined)
+        {
+            var row = 1;
+        }
+        else
+        {
+            var id = $('#PurchaseTable tbody tr:last').attr('id');
+            var row = parseInt(id) + 1;
+        }
+        
+        $.ajax
+        ({
+            url: base_url + "/sales/addproductitem",
+            method:"POST",  
+            data:{DraftItemNumber: row, ProductId: ProductId, StoreId: StoreId},
+            success: function(data)
+            {
+                var data = JSON.parse(data);
+                $("#PurchaseTable tbody").append(data);
+                $('.select2').select2({theme: 'bootstrap4'});
+            }
+        })
+    }
+
+    function getSaleSimplifiedProductDetails(row)
+    {
+        $("#searchText").remove();
+        var ProductId = $('#ProductId').val();
+        var StoreId = $('#StoreId').val();
+
+        var last = $('#PurchaseTable tbody tr:last').html();
+
+        if(last == undefined)
+        {
+            var row = 1;
+        }
+        else
+        {
+            var id = $('#PurchaseTable tbody tr:last').attr('id');
+            var row = parseInt(id) + 1;
+        }
+        
+        $.ajax
+        ({
+            url: base_url + "/salessimplified/addproductitem",
+            method:"POST",  
+            data:{DraftItemNumber: row, ProductId: ProductId, StoreId: StoreId},
+            success: function(data)
+            {
+                var data = JSON.parse(data);
+                $("#PurchaseTable tbody").append(data);
+                $('.select2').select2({theme: 'bootstrap4'});
+            }
+        })
+    }
+
+    function getSalesProductPicture(row)
+    {
+        $("#searchText").remove();
+        var ProductId = $('#ProductId').val();
+        var StoreId = $('#StoreId').val();
+        
+        $.ajax
+        ({
+            url: base_url + "/purchases/getproductspurchasesproduct",
+            method:"POST",  
+            data:{ProductId: ProductId, StoreId: StoreId},
+            success: function(data)
+            {
+                var data = JSON.parse(data);
+                $("#div_row_subscriptions").append(data);
+            }
+        })
+    }
+
+    function getProductStore()
+    {
+        var StoreId = $('#StoreId').val();
+
+        $.ajax
+        ({
+            url: base_url + "/purchases/getproductspurchases",
+            method:"POST",  
+            data:{StoreId: StoreId},
+            success: function(data)
+            {
+                var data = JSON.parse(data);
+                $("#ProductId").html(data);
+            }
+        })
+    }
+
+    function getProductPictureStore()
+    {
+        var StoreId = $('#StoreId').val();
+
+        $.ajax
+        ({
+            url: base_url + "/purchases/getproductspurchasespicture",
+            method:"POST",  
+            data:{StoreId: StoreId},
+            success: function(data)
+            {
+                var data = JSON.parse(data);
+                $("#products_area").html(data);
+            }
+        })
+    }
+
+    function getProductPicturesStore()
+    {
+        var StoreId = $('#StoreId').val();
+        var ProductId = $('#ProductId').val();
+
+        $.ajax
+        ({
+            url: base_url + "/purchases/getproductspurchasesproduct",
+            method:"POST",  
+            data:{StoreId: StoreId, ProductId: ProductId},
+            success: function(data)
+            {
+                var data = JSON.parse(data);
+                $("#products_area").html(data);
+            }
+        })
+    }
+
+    function SetProductPrice(ProductId)
+    {
+        var RowCount = $('#RowCount').val();
+        var StoreId = $('#StoreId').val();
+
+        $.ajax
+        ({
+            url: base_url + "/purchases/setproducttosell",
+            method:"POST",  
+            data:{StoreId: StoreId, ProductId: ProductId, RowCount: RowCount},
+            success: function(data)
+            {
+                var data = JSON.parse(data);
+                $("#ProductDetails").append(data);
+                RowCount = parseInt(RowCount) + 1;
+                $('#RowCount').val(RowCount);
+
+                var PointOfSaleQuantityTotal = $('#PointOfSaleQuantityTotal').html();
+                PointOfSaleQuantityTotal = parseInt(PointOfSaleQuantityTotal) + 1;
+                $('#PointOfSaleQuantityTotal').html(PointOfSaleQuantityTotal);
+
+                var PointOfSaleWithTaxPrice = CalculateColumnPointOfSale('TotalWithTaxePrice_');
+                $('#PointOfSaleWithTaxPrice').html(PointOfSaleWithTaxPrice.toFixed(2));
+
+                $('#ReceiptPrice').val(PointOfSaleWithTaxPrice.toFixed(2));
+            }
+        })
+    }
+
+    function DeleteProductSell(RowCount)
+    {
+        var ProductItemQuantity = $('#ProductItemQuantity_' + RowCount).val();
+        var PointOfSaleQuantityTotal = $('#PointOfSaleQuantityTotal').html();
+
+        PointOfSaleQuantityTotal = parseInt(PointOfSaleQuantityTotal) - parseInt(ProductItemQuantity);
+        $('#PointOfSaleQuantityTotal').html(PointOfSaleQuantityTotal);
+        
+        $('#' + RowCount).remove();
+
+        var PointOfSaleTotalDiscount = CalculateColumnPointOfSale('ProductDiscountPrice_');
+        $('#PointOfSaleTotalDiscount').html(PointOfSaleTotalDiscount.toFixed(2));
+
+        var PointOfSaleWithTaxPrice = CalculateColumnPointOfSale('TotalWithTaxePrice_');
+        $('#PointOfSaleWithTaxPrice').html(PointOfSaleWithTaxPrice.toFixed(2));
+        
+        $('#ReceiptPrice').val(PointOfSaleWithTaxPrice.toFixed(2));
+    }
+
+    function deleteAllPointOfSale()
+    {
+        $('#ProductDetails div.selling-points-card-product').each(function()
+        {
+            var Id = this.id;
+
+            $('#PointOfSaleQuantityTotal').html(0);
+            
+            $('#' + Id).remove();
+
+            $('#PointOfSaleTotalDiscount').html(0);
+
+            $('#PointOfSaleWithTaxPrice').html(0);
+            $('#ReceiptPrice').val(0);
+        });
+    }
+
+    function EmptyAllPointOfSale()
+    {
+        $('#ProductDetails div.selling-points-card-product').each(function()
+        {
+            var Id = this.id;            
+            $('#' + Id).remove();
+        });
+    
+        $('#PointOfSaleQuantityTotal').html(0);
+        $('#PointOfSaleTotalDiscount').html(0);
+        $('#PointOfSaleWithTaxPrice').html(0);
+
+        $("#PointOfSalePrintReceipt").attr("href", "#");
+        $('#PointOfSalePrintReceipt').hide();
+        $('#SaleReference').val('');
+        $('#ReceiptPrice').val(0);
+        $('#SaleComment').val('');
+    }
+
+    function SaveClient()
+    {
+        var formData = $("#ClientForm").serialize();
+
+        $.ajax
+        ({
+            type: "POST",
+            url: "/pointsofsales/addfastclient",
+            data: formData,
+            dataType: "json",
+            success: function (data)
+            {
+                if(data[0] == 'true')
+                {
+                    var ClientId = document.getElementById("ClientId");
+                    var option = document.createElement("option");
+                    option.text = data[3] + " " + data[4];
+                    option.value= data[2];
+                    console.log(option);
+                    ClientId.add(option);
+
+                    option.selected = true;
+                    
+                    $("#ContentMessage").prepend('<div class="alert alert-success mb-5" role="alert"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-hidden="true">×</button><i class="fa fa-check-circle-o me-2" aria-hidden="true"></i> ' + data[1] + '</div>');
+                    $("#add2222").modal('hide');
+                }
+                else
+                {
+                    $("#ContentMessage").prepend('<div class="alert alert-danger mb-5" role="alert"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-hidden="true">×</button><i class="fa fa-check-circle-o me-2" aria-hidden="true"></i> ' + data[1] + '</div>');
+                }
+            }
+        });
+    }
+
+    function SavePointOfSaleData()
+    {
+        var formData = $("#PointOfSaleForm").serialize();
+
+        $.ajax
+        ({
+            type: "POST",
+            url: "/pointsofsales/addpointofsale",
+            data: formData,
+            dataType: "json",
+            success: function (data)
+            {
+                if(data[0] == 'true')
+                {   
+                    $("#PointOfSalePrintReceipt").attr("href", "/pointsofsales/print/" + data[2]);
+                    $('#PointOfSalePrintReceipt').show();
+
+                    if($.fn.DataTable.isDataTable('#file-datatable'))
+                    {
+                        $('#file-datatable').DataTable().destroy();
+                    }
+                    
+                    var dataTable = $('#file-datatable').DataTable
+                                ({
+                                    buttons: ['copy', 'excel', 'pdf', 'csv'],
+                                    language:
+                                    {
+                                        searchPlaceholder: 'البحث...',
+                                        scrollX: "100%",
+                                        sSearch: '',
+                                    }
+                                });
+
+                    dataTable.row.add(data[3]).draw();
+
+                    $("#ContentMessage").prepend('<div class="alert alert-success mb-5" role="alert"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-hidden="true">×</button><i class="fa fa-check-circle-o me-2" aria-hidden="true"></i> ' + data[1] + '</div>');
+                }
+                else
+                {
+                    $("#ContentMessage").prepend('<div class="alert alert-danger mb-5" role="alert"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-hidden="true">×</button><i class="fa fa-check-circle-o me-2" aria-hidden="true"></i> ' + data[1] + '</div>');
+                }
+            }
+        });
+    }
+
+    function SaveDraftPointOfSaleData()
+    {
+        var formData = $("#PointOfSaleForm").serialize();
+
+        $.ajax
+        ({
+            type: "POST",
+            url: "/pointsofsales/draftsales",
+            data: formData,
+            dataType: "json",
+            success: function (data)
+            {
+                if(data[0] == 'true')
+                {   
+                    $("#PointOfSalePrintReceipt1").attr("href", "/pointsofsales/draftsalesprint/" + data[2]);
+                    $('#PointOfSalePrintReceipt1').show();
+
+                    if($.fn.DataTable.isDataTable('#file-datatable1'))
+                    {
+                        $('#file-datatable1').DataTable().destroy();
+                    }
+                    
+                    var dataTable = $('#file-datatable1').DataTable
+                                ({
+                                    buttons: ['copy', 'excel', 'pdf', 'csv'],
+                                    language:
+                                    {
+                                        searchPlaceholder: 'البحث...',
+                                        scrollX: "100%",
+                                        sSearch: '',
+                                    }
+                                });
+
+                    dataTable.row.add(data[3]).draw();
+
+                    $("#ContentMessage").prepend('<div class="alert alert-success mb-5" role="alert"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-hidden="true">×</button><i class="fa fa-check-circle-o me-2" aria-hidden="true"></i> ' + data[1] + '</div>');
+                }
+                else
+                {
+                    $("#ContentMessage").prepend('<div class="alert alert-danger mb-5" role="alert"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-hidden="true">×</button><i class="fa fa-check-circle-o me-2" aria-hidden="true"></i> ' + data[1] + '</div>');
+                }
+            }
+        });
+    }
+
+    function SetPricePointOfsale(RowCount)
+    {
+        var ProductItemQuantity = $('#ProductItemQuantity_' + RowCount).val();
+        var ProductSalePrice = $('#ProductSalePrice_' + RowCount).val();
+        var ProductDiscountPrice = $('#ProductDiscountPrice_' + RowCount).val();
+        var TaxPercentage = $('#TaxPercentage_' + RowCount).val();
+
+        if(ProductItemQuantity == undefined || ProductItemQuantity == ""){ ProductItemQuantity = 0; }
+        if(ProductSalePrice == undefined || ProductSalePrice == ""){ ProductSalePrice = 0; }
+        if(ProductDiscountPrice == undefined || ProductDiscountPrice == ""){ ProductDiscountPrice = 0; }
+        if(TaxPercentage == undefined || TaxPercentage == ""){ TaxPercentage = 0; }
+
+        var PurchaseItemTotalPrice = parseFloat(ProductItemQuantity) * parseFloat(ProductSalePrice);
+        var ProductPriceAfterDiscount = parseFloat(PurchaseItemTotalPrice) - parseFloat(ProductDiscountPrice);
+        var TaxePrice = (parseFloat(ProductPriceAfterDiscount) * parseFloat(TaxPercentage))/100;
+
+        var TotalWithTaxePrice = parseFloat(TaxePrice) + parseFloat(ProductPriceAfterDiscount);
+
+        $('#TotalWithTaxePrice_' + RowCount).val(TotalWithTaxePrice.toFixed(2));
+        $('#ProductSalePriceHtml_' + RowCount).html(TotalWithTaxePrice.toFixed(2));
+
+        var PointOfSaleTotalDiscount = CalculateColumnPointOfSale('ProductDiscountPrice_');
+        $('#PointOfSaleTotalDiscount').html(PointOfSaleTotalDiscount.toFixed(2));
+
+        var PointOfSaleWithTaxPrice = CalculateColumnPointOfSale('TotalWithTaxePrice_');
+        $('#PointOfSaleWithTaxPrice').html(PointOfSaleWithTaxPrice.toFixed(2));
+
+        $('#ReceiptPrice').val(PointOfSaleWithTaxPrice.toFixed(2));
+    }
+
+    function CalculateColumnPointOfSale(ColumnToCalculateId)
+    {
+        var PointOfSaleTotalDiscount = 0;
+
+        $('#ProductDetails div.selling-points-card-product').each(function()
+        {
+            var Id = this.id;
+
+            var ColumnValue = parseFloat($('#' + ColumnToCalculateId + Id).val());
+
+            if(ColumnValue == undefined || ColumnValue == "" || isNaN(ColumnValue)){ ColumnValue = 0; }
+
+            if(ColumnValue != "" || !isNaN(ColumnValue))
+            {
+                PointOfSaleTotalDiscount = PointOfSaleTotalDiscount + parseFloat(ColumnValue);
+            }
+        });
+
+        return PointOfSaleTotalDiscount;
+    }
+
+    function AddQuantity(RowCount)
+    {
+        var ProductItemQuantity = $('#ProductItemQuantity_' + RowCount).val();
+        var PointOfSaleQuantityTotal = $('#PointOfSaleQuantityTotal').html();
+
+        ProductItemQuantity = parseInt(ProductItemQuantity) + 1;
+        PointOfSaleQuantityTotal = parseInt(PointOfSaleQuantityTotal) + 1;
+
+        $('#ProductItemQuantity_' + RowCount).val(ProductItemQuantity);
+        $('#PointOfSaleQuantityTotal').html(PointOfSaleQuantityTotal);
+
+        SetPricePointOfsale(RowCount);
+    }
+
+    function MinusQuantity(RowCount)
+    {
+        var ProductItemQuantity = $('#ProductItemQuantity_' + RowCount).val();
+        var PointOfSaleQuantityTotal = $('#PointOfSaleQuantityTotal').html();
+
+        if(ProductItemQuantity != 1)
+        {
+            ProductItemQuantity = parseInt(ProductItemQuantity) - 1;
+            PointOfSaleQuantityTotal = parseInt(PointOfSaleQuantityTotal) - 1;
+        }
+
+        $('#ProductItemQuantity_' + RowCount).val(ProductItemQuantity);
+        $('#PointOfSaleQuantityTotal').html(PointOfSaleQuantityTotal);
+
+        SetPricePointOfsale(RowCount);
+    }
+
+    function deleteItemSubscriptionsRow(row)
+    {
+        $('#' + row).remove();
+    }
+
+    function deletePurchase(row)
+    {
+        $('#' + row).remove();
+
+        var ProductPurchasingPriceTotal = calculateThreeColumn('ProductPurchasingPrice_', 'ProductItemQuantity_', 'ProductDiscountPrice_');
+        var ProductPriceAfterDiscountTotal = calculateColumn('ProductPriceAfterDiscount_');
+
+        var PurchaseTotalBeforTax = parseFloat(ProductPurchasingPriceTotal) + parseFloat(ProductPriceAfterDiscountTotal);
+        var PurchaseTotalTax = calculateColumn('TaxePrice_');
+        var PurchaseTotalAfterTax = calculateColumn('TotalWithTaxePrice_');
+
+        $('#PurchaseTotalBeforTax').val(PurchaseTotalBeforTax.toFixed(2));
+        $('#PurchaseTotalTax').val(PurchaseTotalTax.toFixed(2));
+        $('#PurchaseTotalAfterTax').val(PurchaseTotalAfterTax.toFixed(2));
+    }
+
+    function getPurchaseItemTotalPrice(PurchaseItemId)
+    {
+        var ProductItemQuantity = $('#ProductItemQuantity_' + PurchaseItemId).val();
+        var ProductPurchasingPrice = $('#ProductPurchasingPrice_' + PurchaseItemId).val();
+        var ProductDiscountPrice = $('#ProductDiscountPrice_' + PurchaseItemId).val();
+        var TaxPercentage = $("#TaxeId_" + PurchaseItemId + " option:selected").attr("TaxPercentage");
+        
+        if(ProductItemQuantity == undefined || ProductItemQuantity == ""){ ProductItemQuantity = 0; }
+        if(ProductPurchasingPrice == undefined || ProductPurchasingPrice == ""){ ProductPurchasingPrice = 0; }
+        if(ProductDiscountPrice == undefined || ProductDiscountPrice == ""){ ProductDiscountPrice = 0; }
+        if(TaxPercentage == undefined || TaxPercentage == ""){ TaxPercentage = 0; }
+
+        var PurchaseItemTotalPrice = parseFloat(ProductItemQuantity) * parseFloat(ProductPurchasingPrice);
+        var ProductPriceAfterDiscount = parseFloat(PurchaseItemTotalPrice) - parseFloat(ProductDiscountPrice);
+        var TaxePrice = (parseFloat(ProductPriceAfterDiscount) * parseFloat(TaxPercentage))/100;
+
+        $('#TaxePrice_' + PurchaseItemId).val(TaxePrice.toFixed(2));
+        
+        var TotalWithTaxePrice = parseFloat(TaxePrice) + parseFloat(ProductPriceAfterDiscount);
+        $('#TotalWithTaxePrice_' + PurchaseItemId).val(TotalWithTaxePrice.toFixed(2));
+
+        var ProductPurchasingPriceTotal = calculateThreeColumn('ProductPurchasingPrice_', 'ProductItemQuantity_', 'ProductDiscountPrice_');
+
+        var ProductPriceAfterDiscountTotal = calculateColumn('ProductPriceAfterDiscount_');
+
+        var PurchaseTotalBeforTax = parseFloat(ProductPurchasingPriceTotal) + parseFloat(ProductPriceAfterDiscountTotal);
+        var PurchaseTotalTax = calculateColumn('TaxePrice_');
+        var PurchaseTotalAfterTax = calculateColumn('TotalWithTaxePrice_');
+
+        $('#PurchaseTotalBeforTax').val(PurchaseTotalBeforTax.toFixed(2));
+        $('#PurchaseTotalTax').val(PurchaseTotalTax.toFixed(2));
+        $('#PurchaseTotalAfterTax').val(PurchaseTotalAfterTax.toFixed(2));
+    }
+
+    function SetFinalSalaryPrice()
+    {
+        var SalaryPrice = $("#EmployeeId option:selected").attr("SalaryPrice");
+
+        var SalaryAbsenceDiscount = $("#SalaryAbsenceDiscount").val();
+        var SalaryPenaltyDiscount = $("#SalaryPenaltyDiscount").val();
+        var SalaryRewards = $("#SalaryRewards").val();
+        var SalaryExtraHours = $("#SalaryExtraHours").val();
+        var SalaryPricePlus = $("#SalaryPricePlus").val();
+        
+        if(SalaryPrice == undefined || SalaryPrice == ""){ SalaryPrice = 0; }else{ SalaryPrice = parseFloat(SalaryPrice)}
+        if(SalaryAbsenceDiscount == undefined || SalaryAbsenceDiscount == ""){ SalaryAbsenceDiscount = 0; }
+        if(SalaryPenaltyDiscount == undefined || SalaryPenaltyDiscount == ""){ SalaryPenaltyDiscount = 0; }
+        if(SalaryRewards == undefined || SalaryRewards == ""){ SalaryRewards = 0; }
+        if(SalaryExtraHours == undefined || SalaryExtraHours == ""){ SalaryExtraHours = 0; }
+        if(SalaryPricePlus == undefined || SalaryPricePlus == ""){ SalaryPricePlus = 0; }
+
+        var SalaryFinalPrice = (parseFloat(SalaryPrice) - parseFloat(SalaryAbsenceDiscount) - parseFloat(SalaryPenaltyDiscount) + parseFloat(SalaryRewards) + parseFloat(SalaryExtraHours) + parseFloat(SalaryPricePlus))
+
+        $('#SalaryPrice').val(SalaryPrice.toFixed(2));
+        $('#SalaryFinalPrice').val(SalaryFinalPrice.toFixed(2));
+    }
+
+    function getPaymentTypeId()
+    {
+        var PaymentTypeLinkedToBank = $("#PaymentTypeId option:selected").attr("PaymentTypeLinkedToBank");
+        var PaymentTypeLinkedToGiftCards = $("#PaymentTypeId option:selected").attr("PaymentTypeLinkedToGiftCards");
+
+        if(parseInt(PaymentTypeLinkedToBank) == 1)
+        {
+            $('#BankIdDiv').show();
+            $('#GiftCardIdDiv').hide();
+        }
+        else if(parseInt(PaymentTypeLinkedToGiftCards) == 1)
+        {
+            $('#GiftCardIdDiv').show();
+            $('#BankIdDiv').hide();
+        }
+        else
+        {
+            $('#BankIdDiv').hide();
+            $('#GiftCardIdDiv').hide();
+        }
+    }
+
+    function calculateThreeColumn(index1, index2, index3)
+    {
+        var total = 0;
+        $('#PurchaseTable tbody tr').each(function()
+        {
+            var Id = this.id;
+
+            var value1 = parseFloat($('#' + index1 + Id).val());
+            var value2 = parseFloat($('#' + index2 + Id).val());
+            var value3 = parseFloat($('#' + index3 + Id).val());
+
+            if (!isNaN(value1) && !isNaN(value2) && !isNaN(value3))
+            {
+                total+= (value1 * value2) - value3;
+            }  
+            
+        });
+
+        return parseFloat(total);
+    }
+
+    function calculateColumn(index)
+    {
+        var total = 0;
+        $('#PurchaseTable tbody tr').each(function()
+        {
+            var Id = this.id;
+
+            var value = parseFloat($('#' + index + Id).val());
+
+            if (!isNaN(value))
+            {
+                total += value;
+            }  
+            
+        });
+
+        return parseFloat(total);
+    }
+
+    $(".Date").datepicker(
+    {
+        dateFormat: "yy-mm-dd",
+        changeMonth: true, 
+        changeYear: true, 
+    });
+
+    $('#DateYear').datepicker
+    ({
+        changeYear: true,
+        showButtonPanel: true,
+        dateFormat: 'yy',
+        closeText:'إختيار',
+        onClose: function(dateText, inst)
+        { 
+            var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+            $(this).datepicker('setDate', new Date(year, 1));
+
+            $(".ui-datepicker-month").hide();
+            $(".ui-datepicker-current").hide();
+            $(".ui-datepicker-calendar").hide();
+            $(".ui-datepicker-prev").hide();
+            $(".ui-datepicker-next").hide();
+        },
+    });
+	$("#DateYear").focus(function ()
+    {
+        $(".ui-datepicker-month").hide();
+        $(".ui-datepicker-current").hide();
+        $(".ui-datepicker-calendar").hide();
+        $(".ui-datepicker-prev").hide();
+        $(".ui-datepicker-next").hide();
+
+        $('.ui-datepicker-year').css
+        ({
+            display: 'inline-block',
+            width: '100%',
+            height: '2.375rem',
+            padding: '0.5rem 1.75rem 0.5rem 0.75rem',
+            lineHeight: '1.5',
+            color: '#76839a',
+            verticalAlign: 'middle',
+            backgroundSize: '8px 10px',
+            borderRadius: '7px',
+            WebkitAppearance: 'none',
+            MozAppearance: 'none',
+            appearance: 'none',
+            border: '1px solid #e9edf4',
+        });
+
+        $('.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year').css
+        ({
+            width: '100%',
+        });
+        
+        var $input = $('#DateYear');
+        var $positionedElement = $('#ui-datepicker-div');
+
+        // Calculate the position based on the input element
+        var inputOffset = $input.offset();
+        var inputWidth = $input.outerWidth();
+
+        var leftPosition = inputOffset.left + inputWidth + 10; // Adjust as needed
+
+        // Set the position for the positioned element
+        $positionedElement.css
+        ({
+            position: 'absolute',
+            top: inputOffset.top + 'px',
+        });
+    });
+
+
+    $(document).ready(function ()
+    {
+        if(undefined != $('#card_no').val())
+        {
+            $('#card_no').inputmask("9999 9999 9999 9999");
+            $('#genNo').click(function () 
+            {
+                var no = generateCardNo();
+                $(this).parent().parent('.input-group').children('input').val(no);
+                return false;
+            });
+        }
+
+        getPaymentTypeId();
+        getNotifications();
+    });
+</script>
