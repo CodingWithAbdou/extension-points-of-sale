@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "اكستنشن نقاط البيع",
+    "version": "1.0",
+    "description": "اضافة لجعل صقحة نقط البيع تعمل اوفلاين",
+    "action": {
+        "default_icon": {
+            "16": "icons/icon.png",
+            "48": "icons/icon.png",
+            "128": "icons/icon.png"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["activeTab"],
+    "options_ui": {
+        "page": "main.html",
+        "open_in_tab": true
+    }
+}
